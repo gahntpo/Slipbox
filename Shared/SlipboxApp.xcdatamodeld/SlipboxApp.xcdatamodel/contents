@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20B5012d" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Folder" representedClassName="Folder" syncable="YES" codeGenerationType="class">
+        <attribute name="creationDate_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name_" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uuid_" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="children_" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Folder" inverseName="parent" inverseEntity="Folder"/>
+        <relationship name="notes_" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Note" inverseName="folder" inverseEntity="Note"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Folder" inverseName="children_" inverseEntity="Folder"/>
+    </entity>
+    <entity name="Keyword" representedClassName="Keyword" syncable="YES" codeGenerationType="class">
+        <attribute name="name_" optional="YES" attributeType="String"/>
+        <attribute name="uuid_" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="notes_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="keywords_" inverseEntity="Note"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="class">
+        <attribute name="bodyText_" optional="YES" attributeType="String"/>
+        <attribute name="creationDate_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="formattedText_" optional="YES" attributeType="Binary"/>
+        <attribute name="img" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status_" optional="YES" attributeType="String"/>
+        <attribute name="title_" optional="YES" attributeType="String"/>
+        <attribute name="uuid_" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="backlinks_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="linkedNotes_" inverseEntity="Note"/>
+        <relationship name="folder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Folder" inverseName="notes_" inverseEntity="Folder"/>
+        <relationship name="keywords_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Keyword" inverseName="notes_" inverseEntity="Keyword"/>
+        <relationship name="linkedNotes_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="backlinks_" inverseEntity="Note"/>
+    </entity>
+    <elements>
+        <element name="Folder" positionX="65.14105224609375" positionY="1244.732849121094" width="128" height="148"/>
+        <element name="Keyword" positionX="578.8662109375" positionY="1343.633728027344" width="128" height="74"/>
+        <element name="Note" positionX="281.8694458007812" positionY="1248.784606933594" width="128" height="209"/>
+    </elements>
+</model>

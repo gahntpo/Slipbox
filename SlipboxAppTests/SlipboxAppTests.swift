@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import SlipboxApp
+//@testable import SlipboxApp
 
 class SlipboxAppTests: XCTestCase {
 

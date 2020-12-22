@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170F9013257BB46F00BCC9D6 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F9012257BB46F00BCC9D6 /* Status.swift */; };
+		170F9014257BB46F00BCC9D6 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F9012257BB46F00BCC9D6 /* Status.swift */; };
+		170F901A257BB83400BCC9D6 /* NSData+text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F9019257BB83400BCC9D6 /* NSData+text.swift */; };
+		170F901B257BB83400BCC9D6 /* NSData+text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F9019257BB83400BCC9D6 /* NSData+text.swift */; };
+		170F9021257BBE1800BCC9D6 /* TextViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F9020257BBE1800BCC9D6 /* TextViewWrapper.swift */; };
+		172C1935258367F500A0B3FA /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C1934258367F500A0B3FA /* DataType.swift */; };
+		172C1936258367F500A0B3FA /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C1934258367F500A0B3FA /* DataType.swift */; };
+		172C193C258367FD00A0B3FA /* DataTypeDragItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C193B258367FD00A0B3FA /* DataTypeDragItem.swift */; };
+		172C193D258367FD00A0B3FA /* DataTypeDragItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C193B258367FD00A0B3FA /* DataTypeDragItem.swift */; };
+		172C19522583754700A0B3FA /* Keyword+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C19512583754700A0B3FA /* Keyword+helper.swift */; };
+		172C19532583754700A0B3FA /* Keyword+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C19512583754700A0B3FA /* Keyword+helper.swift */; };
+		172C195A25837A5700A0B3FA /* KeywordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C195925837A5700A0B3FA /* KeywordListView.swift */; };
+		172C196525837A7B00A0B3FA /* KeywordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C196425837A7B00A0B3FA /* KeywordRow.swift */; };
+		172C196C25837A8F00A0B3FA /* KeywordEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C196B25837A8F00A0B3FA /* KeywordEditorView.swift */; };
+		173B92EC25861E12008BB5F0 /* NoteSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B92EB25861E12008BB5F0 /* NoteSearchView.swift */; };
+		173B92FB2586254F008BB5F0 /* PreferenceWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B92FA2586254F008BB5F0 /* PreferenceWindow.swift */; };
+		173B930525862567008BB5F0 /* PreferenceContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B930425862567008BB5F0 /* PreferenceContentView.swift */; };
 		175E4C312577880E001A155E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E4C302577880E001A155E /* AppDelegate.swift */; };
 		175E4C332577880E001A155E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E4C322577880E001A155E /* ContentView.swift */; };
 		175E4C362577880E001A155E /* SlipboxApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 175E4C342577880E001A155E /* SlipboxApp.xcdatamodeld */; };
@@ -15,6 +32,57 @@
 		175E4C3E25778811001A155E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175E4C3C25778811001A155E /* Main.storyboard */; };
 		175E4C4A25778811001A155E /* SlipboxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E4C4925778811001A155E /* SlipboxAppTests.swift */; };
 		175E4C5525778811001A155E /* SlipboxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E4C5425778811001A155E /* SlipboxAppUITests.swift */; };
+		1762780725921024008A2546 /* Folder+handleDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762780625921024008A2546 /* Folder+handleDrop.swift */; };
+		1762780825921024008A2546 /* Folder+handleDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762780625921024008A2546 /* Folder+handleDrop.swift */; };
+		1762780E2592105C008A2546 /* DropStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762780D2592105C008A2546 /* DropStatus.swift */; };
+		1762780F2592105C008A2546 /* DropStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762780D2592105C008A2546 /* DropStatus.swift */; };
+		176384E32578CCFE00911F6D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988E1B25778A3C002DD489 /* Persistence.swift */; };
+		176384F42578DB1500911F6D /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176384F32578DB1500911F6D /* NotesTests.swift */; };
+		176384FE2578DF8800911F6D /* UnitTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176384FD2578DF8800911F6D /* UnitTestHelpers.swift */; };
+		176384FF2578DF8800911F6D /* UnitTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176384FD2578DF8800911F6D /* UnitTestHelpers.swift */; };
+		1763850A2579247400911F6D /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176385092579247400911F6D /* NoteListView.swift */; };
+		1763850B2579247400911F6D /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176385092579247400911F6D /* NoteListView.swift */; };
+		176385152579264F00911F6D /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176385142579264F00911F6D /* NoteView.swift */; };
+		176385162579264F00911F6D /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176385142579264F00911F6D /* NoteView.swift */; };
+		176EDAE4257D015600F1C300 /* Folder+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176EDAE3257D015600F1C300 /* Folder+helper.swift */; };
+		176EDAE5257D015600F1C300 /* Folder+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176EDAE3257D015600F1C300 /* Folder+helper.swift */; };
+		176EDAEB257D020900F1C300 /* FolderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176EDAEA257D020900F1C300 /* FolderTests.swift */; };
+		176EDAF2257D132D00F1C300 /* FolderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176EDAF1257D132D00F1C300 /* FolderListView.swift */; };
+		176EDAF3257D132D00F1C300 /* FolderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176EDAF1257D132D00F1C300 /* FolderListView.swift */; };
+		176EDAFD257D1FAE00F1C300 /* FolderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176EDAFC257D1FAE00F1C300 /* FolderRow.swift */; };
+		176EDAFE257D1FAE00F1C300 /* FolderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176EDAFC257D1FAE00F1C300 /* FolderRow.swift */; };
+		176EDB08257D20AD00F1C300 /* FolderEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176EDB07257D20AD00F1C300 /* FolderEditorView.swift */; };
+		176EDB09257D20AD00F1C300 /* FolderEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176EDB07257D20AD00F1C300 /* FolderEditorView.swift */; };
+		17988E0B25778926002DD489 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17988E0A25778926002DD489 /* CloudKit.framework */; };
+		17988E1325778A3C002DD489 /* SlipboxPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988E1225778A3C002DD489 /* SlipboxPadApp.swift */; };
+		17988E1525778A3C002DD489 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988E1425778A3C002DD489 /* ContentView.swift */; };
+		17988E1725778A3C002DD489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17988E1625778A3C002DD489 /* Assets.xcassets */; };
+		17988E1A25778A3C002DD489 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17988E1925778A3C002DD489 /* Preview Assets.xcassets */; };
+		17988E1C25778A3C002DD489 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988E1B25778A3C002DD489 /* Persistence.swift */; };
+		17988E2A25778A64002DD489 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17988E2925778A64002DD489 /* CloudKit.framework */; };
+		17988E3025778AF6002DD489 /* SlipboxApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 175E4C342577880E001A155E /* SlipboxApp.xcdatamodeld */; };
+		17988E3B25778F76002DD489 /* Note+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988E3A25778F76002DD489 /* Note+helper.swift */; };
+		17988E4525779145002DD489 /* NSPredicate+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988E4425779145002DD489 /* NSPredicate+helper.swift */; };
+		17988E4A257791C0002DD489 /* NSPredicate+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988E4425779145002DD489 /* NSPredicate+helper.swift */; };
+		17988E4F25779576002DD489 /* Note+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988E3A25778F76002DD489 /* Note+helper.swift */; };
+		179B12E52584B77E0026CF48 /* RecursiveFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD4C36257E332B00C9FC85 /* RecursiveFolderView.swift */; };
+		179B12EA2584B7940026CF48 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFEC41257B9383005BC6E0 /* NoteRow.swift */; };
+		179B12F82584B7C00026CF48 /* helper for nsitem conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8F3B4257CE8A5004F34D2 /* helper for nsitem conversion.swift */; };
+		179B12FE2584CCD10026CF48 /* WindowContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179B12FD2584CCD10026CF48 /* WindowContentView.swift */; };
+		17A8F3B5257CE8A5004F34D2 /* helper for nsitem conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8F3B4257CE8A5004F34D2 /* helper for nsitem conversion.swift */; };
+		17C951252584D68300C9396F /* NSNotification.Name + helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C951242584D68300C9396F /* NSNotification.Name + helper.swift */; };
+		17CD4C37257E332B00C9FC85 /* RecursiveFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD4C36257E332B00C9FC85 /* RecursiveFolderView.swift */; };
+		17CD4C3D257E371F00C9FC85 /* NavigationStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD4C3C257E371F00C9FC85 /* NavigationStateManager.swift */; };
+		17DC673A258A83C900F5FDA2 /* Note+handelDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6739258A83C900F5FDA2 /* Note+handelDrop.swift */; };
+		17DC673B258A83C900F5FDA2 /* Note+handelDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6739258A83C900F5FDA2 /* Note+handelDrop.swift */; };
+		17DC6741258A842D00F5FDA2 /* URL+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6740258A842C00F5FDA2 /* URL+helper.swift */; };
+		17DC6742258A842D00F5FDA2 /* URL+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6740258A842C00F5FDA2 /* URL+helper.swift */; };
+		17DC6748258A845600F5FDA2 /* OptionalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6747258A845600F5FDA2 /* OptionalImage.swift */; };
+		17DC6749258A845600F5FDA2 /* OptionalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6747258A845600F5FDA2 /* OptionalImage.swift */; };
+		17E1F99A2587A93900482A7E /* NavigationStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD4C3C257E371F00C9FC85 /* NavigationStateManager.swift */; };
+		17E1F99F2587A96400482A7E /* NSNotification.Name + helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C951242584D68300C9396F /* NSNotification.Name + helper.swift */; };
+		17EDECF92586076700536926 /* AppToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EDECF82586076700536926 /* AppToolbar.swift */; };
+		17EFEC42257B9383005BC6E0 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFEC41257B9383005BC6E0 /* NoteRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +103,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170F9012257BB46F00BCC9D6 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		170F9019257BB83400BCC9D6 /* NSData+text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+text.swift"; sourceTree = "<group>"; };
+		170F9020257BBE1800BCC9D6 /* TextViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWrapper.swift; sourceTree = "<group>"; };
+		172C1934258367F500A0B3FA /* DataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		172C193B258367FD00A0B3FA /* DataTypeDragItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTypeDragItem.swift; sourceTree = "<group>"; };
+		172C19512583754700A0B3FA /* Keyword+helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyword+helper.swift"; sourceTree = "<group>"; };
+		172C195925837A5700A0B3FA /* KeywordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordListView.swift; sourceTree = "<group>"; };
+		172C196425837A7B00A0B3FA /* KeywordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordRow.swift; sourceTree = "<group>"; };
+		172C196B25837A8F00A0B3FA /* KeywordEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordEditorView.swift; sourceTree = "<group>"; };
+		173B92EB25861E12008BB5F0 /* NoteSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSearchView.swift; sourceTree = "<group>"; };
+		173B92FA2586254F008BB5F0 /* PreferenceWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindow.swift; sourceTree = "<group>"; };
+		173B930425862567008BB5F0 /* PreferenceContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceContentView.swift; sourceTree = "<group>"; };
 		175E4C2D2577880E001A155E /* SlipboxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlipboxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175E4C302577880E001A155E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		175E4C322577880E001A155E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +130,39 @@
 		175E4C5025778811001A155E /* SlipboxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlipboxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		175E4C5425778811001A155E /* SlipboxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipboxAppUITests.swift; sourceTree = "<group>"; };
 		175E4C5625778812001A155E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1762780625921024008A2546 /* Folder+handleDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+handleDrop.swift"; sourceTree = "<group>"; };
+		1762780D2592105C008A2546 /* DropStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropStatus.swift; sourceTree = "<group>"; };
+		176384F32578DB1500911F6D /* NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTests.swift; sourceTree = "<group>"; };
+		176384FD2578DF8800911F6D /* UnitTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestHelpers.swift; sourceTree = "<group>"; };
+		176385092579247400911F6D /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		176385142579264F00911F6D /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		176EDAE3257D015600F1C300 /* Folder+helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+helper.swift"; sourceTree = "<group>"; };
+		176EDAEA257D020900F1C300 /* FolderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTests.swift; sourceTree = "<group>"; };
+		176EDAF1257D132D00F1C300 /* FolderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderListView.swift; sourceTree = "<group>"; };
+		176EDAFC257D1FAE00F1C300 /* FolderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderRow.swift; sourceTree = "<group>"; };
+		176EDB07257D20AD00F1C300 /* FolderEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderEditorView.swift; sourceTree = "<group>"; };
+		17988E0A25778926002DD489 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		17988E1025778A3C002DD489 /* SlipboxPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlipboxPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17988E1225778A3C002DD489 /* SlipboxPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipboxPadApp.swift; sourceTree = "<group>"; };
+		17988E1425778A3C002DD489 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17988E1625778A3C002DD489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17988E1925778A3C002DD489 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17988E1B25778A3C002DD489 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		17988E2025778A3C002DD489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17988E2825778A5D002DD489 /* SlipboxPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlipboxPad.entitlements; sourceTree = "<group>"; };
+		17988E2925778A64002DD489 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		17988E3A25778F76002DD489 /* Note+helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+helper.swift"; sourceTree = "<group>"; };
+		17988E4425779145002DD489 /* NSPredicate+helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+helper.swift"; sourceTree = "<group>"; };
+		179B12FD2584CCD10026CF48 /* WindowContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowContentView.swift; sourceTree = "<group>"; };
+		17A8F3B4257CE8A5004F34D2 /* helper for nsitem conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "helper for nsitem conversion.swift"; sourceTree = "<group>"; };
+		17C951242584D68300C9396F /* NSNotification.Name + helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification.Name + helper.swift"; sourceTree = "<group>"; };
+		17CD4C36257E332B00C9FC85 /* RecursiveFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursiveFolderView.swift; sourceTree = "<group>"; };
+		17CD4C3C257E371F00C9FC85 /* NavigationStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStateManager.swift; sourceTree = "<group>"; };
+		17DC6739258A83C900F5FDA2 /* Note+handelDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+handelDrop.swift"; sourceTree = "<group>"; };
+		17DC6740258A842C00F5FDA2 /* URL+helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+helper.swift"; sourceTree = "<group>"; };
+		17DC6747258A845600F5FDA2 /* OptionalImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalImage.swift; sourceTree = "<group>"; };
+		17EDECF82586076700536926 /* AppToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppToolbar.swift; sourceTree = "<group>"; };
+		17EFEC41257B9383005BC6E0 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17988E0B25778926002DD489 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,16 +188,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17988E0D25778A3C002DD489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17988E2A25778A64002DD489 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172C1933258367DA00A0B3FA /* drag and drop */ = {
+			isa = PBXGroup;
+			children = (
+				172C1934258367F500A0B3FA /* DataType.swift */,
+				172C193B258367FD00A0B3FA /* DataTypeDragItem.swift */,
+				17DC6740258A842C00F5FDA2 /* URL+helper.swift */,
+			);
+			path = "drag and drop";
+			sourceTree = "<group>";
+		};
+		172C195825837A3B00A0B3FA /* Keyword */ = {
+			isa = PBXGroup;
+			children = (
+				172C195925837A5700A0B3FA /* KeywordListView.swift */,
+				172C196425837A7B00A0B3FA /* KeywordRow.swift */,
+				172C196B25837A8F00A0B3FA /* KeywordEditorView.swift */,
+			);
+			path = Keyword;
+			sourceTree = "<group>";
+		};
+		173B92F925862533008BB5F0 /* prefences */ = {
+			isa = PBXGroup;
+			children = (
+				173B92FA2586254F008BB5F0 /* PreferenceWindow.swift */,
+				173B930425862567008BB5F0 /* PreferenceContentView.swift */,
+			);
+			path = prefences;
+			sourceTree = "<group>";
+		};
 		175E4C242577880E001A155E = {
 			isa = PBXGroup;
 			children = (
+				17988E2B25778AAE002DD489 /* Shared */,
 				175E4C2F2577880E001A155E /* SlipboxApp */,
+				17988E1125778A3C002DD489 /* SlipboxPad */,
 				175E4C4825778811001A155E /* SlipboxAppTests */,
 				175E4C5325778811001A155E /* SlipboxAppUITests */,
 				175E4C2E2577880E001A155E /* Products */,
+				17988E0925778926002DD489 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +247,7 @@
 				175E4C2D2577880E001A155E /* SlipboxApp.app */,
 				175E4C4525778811001A155E /* SlipboxAppTests.xctest */,
 				175E4C5025778811001A155E /* SlipboxAppUITests.xctest */,
+				17988E1025778A3C002DD489 /* SlipboxPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,13 +255,16 @@
 		175E4C2F2577880E001A155E /* SlipboxApp */ = {
 			isa = PBXGroup;
 			children = (
-				175E4C302577880E001A155E /* AppDelegate.swift */,
-				175E4C322577880E001A155E /* ContentView.swift */,
+				179B13032584CCD80026CF48 /* app */,
+				173B92F925862533008BB5F0 /* prefences */,
+				179B13042584CCE30026CF48 /* main window */,
+				172C195825837A3B00A0B3FA /* Keyword */,
+				176EDAF0257D131B00F1C300 /* Folder */,
+				176385082579245C00911F6D /* Notes */,
+				172C1933258367DA00A0B3FA /* drag and drop */,
 				175E4C3725778811001A155E /* Assets.xcassets */,
-				175E4C3C25778811001A155E /* Main.storyboard */,
 				175E4C3F25778811001A155E /* Info.plist */,
 				175E4C4025778811001A155E /* SlipboxApp.entitlements */,
-				175E4C342577880E001A155E /* SlipboxApp.xcdatamodeld */,
 				175E4C3925778811001A155E /* Preview Content */,
 			);
 			path = SlipboxApp;
@@ -123,7 +281,9 @@
 		175E4C4825778811001A155E /* SlipboxAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				176EDAEA257D020900F1C300 /* FolderTests.swift */,
 				175E4C4925778811001A155E /* SlipboxAppTests.swift */,
+				176384F32578DB1500911F6D /* NotesTests.swift */,
 				175E4C4B25778811001A155E /* Info.plist */,
 			);
 			path = SlipboxAppTests;
@@ -136,6 +296,109 @@
 				175E4C5625778812001A155E /* Info.plist */,
 			);
 			path = SlipboxAppUITests;
+			sourceTree = "<group>";
+		};
+		176385082579245C00911F6D /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				176385092579247400911F6D /* NoteListView.swift */,
+				17EFEC41257B9383005BC6E0 /* NoteRow.swift */,
+				176385142579264F00911F6D /* NoteView.swift */,
+				17DC6747258A845600F5FDA2 /* OptionalImage.swift */,
+				170F9020257BBE1800BCC9D6 /* TextViewWrapper.swift */,
+				17A8F3B4257CE8A5004F34D2 /* helper for nsitem conversion.swift */,
+				173B92EB25861E12008BB5F0 /* NoteSearchView.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		176EDAF0257D131B00F1C300 /* Folder */ = {
+			isa = PBXGroup;
+			children = (
+				176EDAF1257D132D00F1C300 /* FolderListView.swift */,
+				17CD4C36257E332B00C9FC85 /* RecursiveFolderView.swift */,
+				176EDAFC257D1FAE00F1C300 /* FolderRow.swift */,
+				1762780D2592105C008A2546 /* DropStatus.swift */,
+				176EDB07257D20AD00F1C300 /* FolderEditorView.swift */,
+			);
+			path = Folder;
+			sourceTree = "<group>";
+		};
+		17988E0925778926002DD489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17988E2925778A64002DD489 /* CloudKit.framework */,
+				17988E0A25778926002DD489 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17988E1125778A3C002DD489 /* SlipboxPad */ = {
+			isa = PBXGroup;
+			children = (
+				17988E1225778A3C002DD489 /* SlipboxPadApp.swift */,
+				17988E2825778A5D002DD489 /* SlipboxPad.entitlements */,
+				17988E1425778A3C002DD489 /* ContentView.swift */,
+				17988E1625778A3C002DD489 /* Assets.xcassets */,
+				17988E2025778A3C002DD489 /* Info.plist */,
+				17988E1825778A3C002DD489 /* Preview Content */,
+			);
+			path = SlipboxPad;
+			sourceTree = "<group>";
+		};
+		17988E1825778A3C002DD489 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				17988E1925778A3C002DD489 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17988E2B25778AAE002DD489 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				17988E1B25778A3C002DD489 /* Persistence.swift */,
+				176384FD2578DF8800911F6D /* UnitTestHelpers.swift */,
+				17988E3925778F63002DD489 /* model */,
+				175E4C342577880E001A155E /* SlipboxApp.xcdatamodeld */,
+				17988E4425779145002DD489 /* NSPredicate+helper.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		17988E3925778F63002DD489 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				176EDAE3257D015600F1C300 /* Folder+helper.swift */,
+				1762780625921024008A2546 /* Folder+handleDrop.swift */,
+				17988E3A25778F76002DD489 /* Note+helper.swift */,
+				17DC6739258A83C900F5FDA2 /* Note+handelDrop.swift */,
+				172C19512583754700A0B3FA /* Keyword+helper.swift */,
+				170F9012257BB46F00BCC9D6 /* Status.swift */,
+				170F9019257BB83400BCC9D6 /* NSData+text.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		179B13032584CCD80026CF48 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				175E4C302577880E001A155E /* AppDelegate.swift */,
+				175E4C3C25778811001A155E /* Main.storyboard */,
+				17C951242584D68300C9396F /* NSNotification.Name + helper.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		179B13042584CCE30026CF48 /* main window */ = {
+			isa = PBXGroup;
+			children = (
+				179B12FD2584CCD10026CF48 /* WindowContentView.swift */,
+				17EDECF82586076700536926 /* AppToolbar.swift */,
+				175E4C322577880E001A155E /* ContentView.swift */,
+				17CD4C3C257E371F00C9FC85 /* NavigationStateManager.swift */,
+			);
+			path = "main window";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +457,23 @@
 			productReference = 175E4C5025778811001A155E /* SlipboxAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		17988E0F25778A3C002DD489 /* SlipboxPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17988E2125778A3C002DD489 /* Build configuration list for PBXNativeTarget "SlipboxPad" */;
+			buildPhases = (
+				17988E0C25778A3C002DD489 /* Sources */,
+				17988E0D25778A3C002DD489 /* Frameworks */,
+				17988E0E25778A3C002DD489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlipboxPad;
+			productName = SlipboxPad;
+			productReference = 17988E1025778A3C002DD489 /* SlipboxPad.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +494,9 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 175E4C2C2577880E001A155E;
 					};
+					17988E0F25778A3C002DD489 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = 175E4C282577880E001A155E /* Build configuration list for PBXProject "SlipboxApp" */;
@@ -232,6 +515,7 @@
 				175E4C2C2577880E001A155E /* SlipboxApp */,
 				175E4C4425778811001A155E /* SlipboxAppTests */,
 				175E4C4F25778811001A155E /* SlipboxAppUITests */,
+				17988E0F25778A3C002DD489 /* SlipboxPad */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +545,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17988E0E25778A3C002DD489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17988E1A25778A3C002DD489 /* Preview Assets.xcassets in Resources */,
+				17988E1725778A3C002DD489 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -268,9 +561,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EFEC42257B9383005BC6E0 /* NoteRow.swift in Sources */,
+				176384FE2578DF8800911F6D /* UnitTestHelpers.swift in Sources */,
+				17CD4C37257E332B00C9FC85 /* RecursiveFolderView.swift in Sources */,
+				17C951252584D68300C9396F /* NSNotification.Name + helper.swift in Sources */,
+				17CD4C3D257E371F00C9FC85 /* NavigationStateManager.swift in Sources */,
+				172C195A25837A5700A0B3FA /* KeywordListView.swift in Sources */,
+				17EDECF92586076700536926 /* AppToolbar.swift in Sources */,
+				176EDAF2257D132D00F1C300 /* FolderListView.swift in Sources */,
+				17988E4525779145002DD489 /* NSPredicate+helper.swift in Sources */,
+				172C196C25837A8F00A0B3FA /* KeywordEditorView.swift in Sources */,
+				173B92EC25861E12008BB5F0 /* NoteSearchView.swift in Sources */,
+				173B930525862567008BB5F0 /* PreferenceContentView.swift in Sources */,
+				17DC673A258A83C900F5FDA2 /* Note+handelDrop.swift in Sources */,
+				1763850A2579247400911F6D /* NoteListView.swift in Sources */,
+				176EDAFD257D1FAE00F1C300 /* FolderRow.swift in Sources */,
+				17DC6741258A842D00F5FDA2 /* URL+helper.swift in Sources */,
+				170F9013257BB46F00BCC9D6 /* Status.swift in Sources */,
 				175E4C362577880E001A155E /* SlipboxApp.xcdatamodeld in Sources */,
+				176EDAE4257D015600F1C300 /* Folder+helper.swift in Sources */,
+				176EDB08257D20AD00F1C300 /* FolderEditorView.swift in Sources */,
+				1762780E2592105C008A2546 /* DropStatus.swift in Sources */,
+				17988E3B25778F76002DD489 /* Note+helper.swift in Sources */,
+				172C1935258367F500A0B3FA /* DataType.swift in Sources */,
+				176384E32578CCFE00911F6D /* Persistence.swift in Sources */,
 				175E4C332577880E001A155E /* ContentView.swift in Sources */,
+				172C19522583754700A0B3FA /* Keyword+helper.swift in Sources */,
 				175E4C312577880E001A155E /* AppDelegate.swift in Sources */,
+				170F9021257BBE1800BCC9D6 /* TextViewWrapper.swift in Sources */,
+				176385152579264F00911F6D /* NoteView.swift in Sources */,
+				172C196525837A7B00A0B3FA /* KeywordRow.swift in Sources */,
+				179B12FE2584CCD10026CF48 /* WindowContentView.swift in Sources */,
+				1762780725921024008A2546 /* Folder+handleDrop.swift in Sources */,
+				173B92FB2586254F008BB5F0 /* PreferenceWindow.swift in Sources */,
+				17A8F3B5257CE8A5004F34D2 /* helper for nsitem conversion.swift in Sources */,
+				172C193C258367FD00A0B3FA /* DataTypeDragItem.swift in Sources */,
+				17DC6748258A845600F5FDA2 /* OptionalImage.swift in Sources */,
+				170F901A257BB83400BCC9D6 /* NSData+text.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +606,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				175E4C4A25778811001A155E /* SlipboxAppTests.swift in Sources */,
+				176EDAEB257D020900F1C300 /* FolderTests.swift in Sources */,
+				176384F42578DB1500911F6D /* NotesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +616,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				175E4C5525778811001A155E /* SlipboxAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17988E0C25778A3C002DD489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172C193D258367FD00A0B3FA /* DataTypeDragItem.swift in Sources */,
+				176EDAF3257D132D00F1C300 /* FolderListView.swift in Sources */,
+				176384FF2578DF8800911F6D /* UnitTestHelpers.swift in Sources */,
+				17E1F99F2587A96400482A7E /* NSNotification.Name + helper.swift in Sources */,
+				170F9014257BB46F00BCC9D6 /* Status.swift in Sources */,
+				179B12E52584B77E0026CF48 /* RecursiveFolderView.swift in Sources */,
+				179B12F82584B7C00026CF48 /* helper for nsitem conversion.swift in Sources */,
+				17988E4A257791C0002DD489 /* NSPredicate+helper.swift in Sources */,
+				17E1F99A2587A93900482A7E /* NavigationStateManager.swift in Sources */,
+				179B12EA2584B7940026CF48 /* NoteRow.swift in Sources */,
+				1763850B2579247400911F6D /* NoteListView.swift in Sources */,
+				17DC6742258A842D00F5FDA2 /* URL+helper.swift in Sources */,
+				1762780825921024008A2546 /* Folder+handleDrop.swift in Sources */,
+				172C1936258367F500A0B3FA /* DataType.swift in Sources */,
+				176EDAFE257D1FAE00F1C300 /* FolderRow.swift in Sources */,
+				17988E4F25779576002DD489 /* Note+helper.swift in Sources */,
+				17988E1C25778A3C002DD489 /* Persistence.swift in Sources */,
+				17988E3025778AF6002DD489 /* SlipboxApp.xcdatamodeld in Sources */,
+				170F901B257BB83400BCC9D6 /* NSData+text.swift in Sources */,
+				17988E1525778A3C002DD489 /* ContentView.swift in Sources */,
+				17DC6749258A845600F5FDA2 /* OptionalImage.swift in Sources */,
+				17DC673B258A83C900F5FDA2 /* Note+handelDrop.swift in Sources */,
+				176EDAE5257D015600F1C300 /* Folder+helper.swift in Sources */,
+				176EDB09257D20AD00F1C300 /* FolderEditorView.swift in Sources */,
+				1762780F2592105C008A2546 /* DropStatus.swift in Sources */,
+				17988E1325778A3C002DD489 /* SlipboxPadApp.swift in Sources */,
+				176385162579264F00911F6D /* NoteView.swift in Sources */,
+				172C19532583754700A0B3FA /* Keyword+helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -423,6 +788,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -449,7 +815,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karinprater.SlipboxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -473,7 +839,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karinprater.SlipboxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -485,6 +851,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2ZB33FC454;
@@ -494,7 +861,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karinprater.SlipboxAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -507,6 +874,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2ZB33FC454;
@@ -516,7 +884,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karinprater.SlipboxAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -564,6 +932,55 @@
 			};
 			name = Release;
 		};
+		17988E2225778A3C002DD489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SlipboxPad/SlipboxPad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlipboxPad/Preview Content\"";
+				DEVELOPMENT_TEAM = 2ZB33FC454;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlipboxPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karinprater.SlipboxPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17988E2325778A3C002DD489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SlipboxPad/SlipboxPad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlipboxPad/Preview Content\"";
+				DEVELOPMENT_TEAM = 2ZB33FC454;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlipboxPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karinprater.SlipboxPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,6 +1016,15 @@
 			buildConfigurations = (
 				175E4C6025778812001A155E /* Debug */,
 				175E4C6125778812001A155E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17988E2125778A3C002DD489 /* Build configuration list for PBXNativeTarget "SlipboxPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17988E2225778A3C002DD489 /* Debug */,
+				17988E2325778A3C002DD489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

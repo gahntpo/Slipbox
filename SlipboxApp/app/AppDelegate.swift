@@ -11,63 +11,74 @@ import SwiftUI
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var window: NSWindow!
-
-
+    var windowContents = [WindowContentView]()
+    var prefWindow: PreferenceWindow?
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
-        // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
-        let contentView = ContentView().environment(\.managedObjectContext, persistentContainer.viewContext)
-
-        // Create the window and set the content view.
-        window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-            backing: .buffered, defer: false)
-        window.center()
-        window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
-        window.makeKeyAndOrderFront(nil)
+      //  UnitTestHelpers.deletesAllNotes(context: PersistenceController.shared.container.viewContext)
+       makeEmptWindow()
+       
+    }
+    
+    func makeEmptWindow()  {
+        let newWindow = WindowContentView(nav: NavigationStateManager())
+         windowContents.append(newWindow)
+    }
+    
+    func makeWindow(for note: Note) {
+        
+        if let openWindow = windowContents.first(where: { $0.nav.selectedNote == note }), openWindow.windowDelegate.windowIsOpen {
+            openWindow.window.makeKeyAndOrderFront(nil)
+        }else {
+            
+            let nav = NavigationStateManager()
+            nav.selectedNote = note
+            nav.selectedFolder = note.folder
+            nav.showNotesColumn = false
+            nav.showFolderColumn = false
+            nav.showKeyColumn = false
+            
+            let window = WindowContentView(nav: nav)
+            windowContents.append(window)
+        }
+            
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
+    
+    //MARK: - menu
+    @IBAction func newWindw(_ sender: NSMenuItem) {
+        makeEmptWindow()
+    }
+    
+    @IBAction func newNote(_ sender: NSMenuItem) {
+        NotificationCenter.default.post(name: NSNotification.Name.newNote, object: nil)
+    }
+    
+    @IBAction func newFolder(_ sender: NSMenuItem) {
+        NotificationCenter.default.post(name: NSNotification.Name.newFolder, object: nil)
+    }
+    
+    @IBAction func preference(_ sender: NSMenuItem) {
+        if let old = prefWindow, old.windowDelegate.windowIsOpen {
+            old.window.makeKeyAndOrderFront(nil)
+        }else {
+            prefWindow = PreferenceWindow()
+        }
+             
+    }
+    
 
     // MARK: - Core Data stack
-
-    lazy var persistentContainer: NSPersistentCloudKitContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
-        let container = NSPersistentCloudKitContainer(name: "SlipboxApp")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
-                fatalError("Unresolved error \(error)")
-            }
-        })
-        return container
-    }()
+    let persistenceController = PersistenceController.shared
 
     // MARK: - Core Data Saving and Undo support
 
     @IBAction func saveAction(_ sender: AnyObject?) {
         // Performs the save action for the application, which is to send the save: message to the application's managed object context. Any encountered errors are presented to the user.
-        let context = persistentContainer.viewContext
+        let context = persistenceController.container.viewContext
 
         if !context.commitEditing() {
             NSLog("\(NSStringFromClass(type(of: self))) unable to commit editing before saving")
@@ -85,12 +96,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func windowWillReturnUndoManager(window: NSWindow) -> UndoManager? {
         // Returns the NSUndoManager for the application. In this case, the manager returned is that of the managed object context for the application.
-        return persistentContainer.viewContext.undoManager
+        return persistenceController.container.viewContext.undoManager
     }
 
     func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
         // Save changes in the application's managed object context before the application terminates.
-        let context = persistentContainer.viewContext
+        let context = persistenceController.container.viewContext
         
         if !context.commitEditing() {
             NSLog("\(NSStringFromClass(type(of: self))) unable to commit editing to terminate")
