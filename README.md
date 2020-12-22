@@ -8,6 +8,4 @@ The app is a note taking system invented by a German sociologist Lukas Luhmann. 
 https://zettelkasten.de
 
 
-
-user-images.githubusercontent.com/53653631/102915664-d4b8f980-448a-11eb-876a-d845e63df285.png
-
+<img width="1019" alt="Screenshot 2020-12-21 at 15 57 45" src="https://user-images.githubusercontent.com/53653631/102917040-2d899180-448d-11eb-8911-9d4f9570f3fe.png">
